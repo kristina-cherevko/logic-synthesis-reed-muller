@@ -5,3 +5,8 @@ The benchmarks from IWLS'22 (https://github.com/alanminko/iwls2022-ls-contest) a
 Copy code from ```src/recsyn.cpp```.
 Run algorithm that uses Shannon expansion and fixed variable order: ```./recsyn -v "input function truth table"```
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
