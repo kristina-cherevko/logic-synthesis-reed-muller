@@ -3,5 +3,5 @@ This repository contains an algorithms for area minimization that use three cano
 The <a href="https://github.com/alanminko/iwls2022-ls-contest">benchmarks</a> from IWLS'22 Programming Contest are used for testing.
 ## Compiling
 To compile algorithms download or copy code from `src/recsyn` folder. <br>
-Examples how to run different algorithms for one function or list of functions.
+Examples how to run different algorithms for one function or list of functions. <br>
 Run algorithm that uses Shannon expansion and fixed variable order: `./recsyn -v 80`.
