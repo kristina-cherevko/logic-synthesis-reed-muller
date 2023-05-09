@@ -8,7 +8,7 @@ src/recsyn.cpp
 ```
 Run algorithm that uses Shannon expansion and fixed variable order: ```./recsyn -v "input function truth table"```
 
-```
+```c++
 function test() {
   console.log("notice the blank line before this function?");
 }
