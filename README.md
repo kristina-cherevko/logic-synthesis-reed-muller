@@ -12,6 +12,9 @@ In terminal run: `./recsyn [-p] [-a] [-v] <string>, argv[0]`.<br>
 ## Examples
 Result of synthesis by algorithm with three canonical expansion and all variable orders for function with truth table `80` in hex notation:
 ```
+[...]>./recsyn -p -v 80
+The array contains 1 truth tables of size 1 words:
+ 0 : 8080808080808080
 Finished entring 3-input 1-output function.
   0 : 0 1 2 : cost =   2
   1 : 0 2 1 : cost =   2
@@ -32,3 +35,4 @@ Verification succeeded.  Time =  0.00 sec
 Written graph with 3 inputs, 1 outputs, and 2 and-nodes into AIGER file "80.aig".
 Added statistics for "80.aig" to the file "stats.txt".
 ```
+Result of synthesis by Shannon expansion algorithm with three canonical expansion and all variable orders for function with truth table `80` in hex notation:
