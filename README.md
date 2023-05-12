@@ -37,7 +37,7 @@ Added statistics for "80.aig" to the file "stats.txt".
 ```
 Result of synthesis by Shannon expansion algorithm used for all variable orders for function in file `test.truth` with truth table `10000100` in binary notation:
 ```
->./recsyn -a -p -v ./inputs/test.truth
+[...]>./recsyn -a -p -v ./inputs/test.truth
 Finished entring 3-input 1-output function from file "./inputs/test.truth".
   0 : 0 1 2 : cost =   5
   1 : 0 2 1 : cost =   4
@@ -59,4 +59,29 @@ Verification succeeded.  Time =  0.00 sec
 test.aig
 Written graph with 3 inputs, 1 outputs, and 4 and-nodes into AIGER file "test.aig".
 Added statistics for "test.aig" to the file "stats.txt".
+```
+To synthesize functions from list run: `./recsyn -a <filename>.filelist`
+```
+Solving problem "./inputs/ex00.truth".
+Finished entring 6-input 1-output function from file "./inputs/ex00.truth".
+The graph contains 41 nodes and spans 10 levels.
+Verification succeeded.  Time =  0.00 sec
+Written graph with 6 inputs, 1 outputs, and 41 and-nodes into AIGER file "ex00.aig".
+Added statistics for "ex00.aig" to the file "stats.txt".
+
+Solving problem "./inputs/ex01.truth".
+Finished entring 6-input 1-output function from file "./inputs/ex01.truth".
+The graph contains 42 nodes and spans 10 levels.
+Verification succeeded.  Time =  0.00 sec
+Written graph with 6 inputs, 1 outputs, and 42 and-nodes into AIGER file "ex01.aig".
+Added statistics for "ex01.aig" to the file "stats.txt".
+
+Solving problem "./inputs/ex02.truth".
+Finished entring 8-input 1-output function from file "./inputs/ex02.truth".
+The graph contains 136 nodes and spans 15 levels.
+Verification succeeded.  Time =  0.00 sec
+Written graph with 8 inputs, 1 outputs, and 136 and-nodes into AIGER file "ex02.aig".
+Added statistics for "ex02.aig" to the file "stats.txt".
+
+Finished solving 3 problems from the list "<filename>.filelist".
 ```
