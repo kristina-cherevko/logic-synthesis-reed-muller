@@ -113,7 +113,7 @@ static inline int kc_vi_remove(kc_vi *v, int e)
     kc_vi_resize(v, v->size - 1);
     return 1;
 }
-static inline int kc_vi_print(kc_vi *v)
+static inline void kc_vi_print(kc_vi *v)
 {
     printf("Array with %d entries:", v->size);
     int i, entry;
@@ -1250,7 +1250,6 @@ extern "C"
         str = (str.substr(found+1, 4));
         
         str = str + ".aig";
-        printf("%s\n", str.c_str());
         kc_gg_aiger_write((char *)str.c_str(), gg, 1);
         kc_top_level_stats((char *)str.c_str(), nvars, outs->size, kc_gg_node_count(gg));
         kc_gg_stop(gg);
