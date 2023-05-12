@@ -35,4 +35,28 @@ Verification succeeded.  Time =  0.00 sec
 Written graph with 3 inputs, 1 outputs, and 2 and-nodes into AIGER file "80.aig".
 Added statistics for "80.aig" to the file "stats.txt".
 ```
-Result of synthesis by Shannon expansion algorithm with three canonical expansion and all variable orders for function with truth table `80` in hex notation:
+Result of synthesis by Shannon expansion algorithm used for all variable orders for function in file `test.truth` with truth table `10000100` in binary notation:
+```
+>./recsyn -a -p -v ./inputs/test.truth
+Finished entring 3-input 1-output function from file "./inputs/test.truth".
+  0 : 0 1 2 : cost =   5
+  1 : 0 2 1 : cost =   4
+  2 : 1 0 2 : cost =   5
+  3 : 1 2 0 : cost =   5
+  4 : 2 0 1 : cost =   4
+  5 : 2 1 0 : cost =   5
+0000000000000000 n00 = 0
+AAAAAAAAAAAAAAAA n01 = a
+CCCCCCCCCCCCCCCC n02 = b
+F0F0F0F0F0F0F0F0 n03 = c
+1 8888888888888888 n04 = a & b
+2 1111111111111111 n05 = ~a & ~b
+3 6666666666666666 n06 = ~n04 & ~n05
+4 9090909090909090 n07 = c & ~n06
+9090909090909090 po0 = n07
+The graph contains 4 nodes (4 ands and 0 xors) and spans 3 levels.
+Verification succeeded.  Time =  0.00 sec
+test.aig
+Written graph with 3 inputs, 1 outputs, and 4 and-nodes into AIGER file "test.aig".
+Added statistics for "test.aig" to the file "stats.txt".
+```
