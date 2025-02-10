@@ -1,7 +1,7 @@
 # Circuit Minimization Algorithms
 
 This repository contains a C program implementing several algorithms for synthesizing minimal
-circuit for completely-specified multi-output Boolean functions represented using truth tables.
+circuit for completely-specified multi-output Boolean functions represented using truth tables. These algorithms were developed as part of my third-year coursework in the Bachelor's degree program in Applied Mathematics at National University of "Kyiv-Mohyla Academy". 
 The algorithms are described in details in the
 <a href="https://people.eecs.berkeley.edu/~alanmi/publications/2023/rm23_area.pdf">paper</a>
 presented at <a href="http://www.lsi-cad.com/RM/RM2023/">Reed-Muller Workshop 2023</a>.
